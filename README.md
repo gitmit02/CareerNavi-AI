@@ -2,6 +2,8 @@
 
 > **AI-powered career guidance platform for students** — helping them discover the right career path, identify skill gaps, generate personalised learning roadmaps, and track their progress — all driven by a real Groq LLM backend.
 
+<img width="1530" height="726" alt="image" src="https://github.com/user-attachments/assets/24301bb2-59a5-479e-b69b-8287530fffdb" />
+
 ---
 
 ## Table of Contents
