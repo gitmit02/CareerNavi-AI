@@ -1,0 +1,13 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="crimsonFav" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="50%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#crimsonFav)"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-dasharray="3 5"/>
+  <path d="M32 16 L38.5 32 L32 48 L25.5 32 Z" fill="#FFF1F4"/>
+  <circle cx="32" cy="32" r="3.5" fill="#F59E0B"/>
+</svg>

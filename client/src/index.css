@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   CareerNavi AI — Startup Design Tokens
+   Three distinct themes: Light, Dark (Crimson Obsidian), and Fun (Hyper-Vibrant)
+   Switched via [data-theme] on <html>.
+   ============================================================ */
+
+:root,
+[data-theme="dark"] {
+  /* DARK MODE: Architectural Obsidian + Refined Crimson & Amber Startup Palette */
+  --c-bg: #09090b;
+  --c-bg-rgb: 9 9 11;
+  --c-surface: #121216;
+  --c-surface-rgb: 18 18 22;
+  --c-surface-2: #1c1c22;
+  --c-surface-2-rgb: 28 28 34;
+  --c-border: #272730;
+  --c-border-rgb: 39 39 48;
+  --c-ink: #f4f4f6;
+  --c-ink-rgb: 244 244 246;
+  --c-muted: #9494a3;
+  --c-muted-rgb: 148 148 163;
+  --c-primary: #e11d48;
+  --c-primary-rgb: 225 29 72;
+  --c-primary-dark: #be123c;
+  --c-primary-dark-rgb: 190 18 60;
+  --c-primary-light: #fb7185;
+  --c-primary-light-rgb: 251 113 133;
+  --c-accent: #f59e0b;
+  --c-accent-rgb: 245 158 11;
+  --c-accent-2: #8b5cf6;
+  --c-accent-2-rgb: 139 92 246;
+  --c-success: #10b981;
+  --c-success-rgb: 16 185 129;
+  --c-danger: #f43f5e;
+  --c-danger-rgb: 244 63 94;
+  --c-warning: #f59e0b;
+  --c-warning-rgb: 245 158 11;
+
+  --road-asphalt: #16161d;
+  --road-border: #2e2e3a;
+  --road-Node-bg: #121216;
+
+  --shadow-soft: 0 8px 30px -6px rgba(0, 0, 0, 0.55), 0 0 1px 1px rgba(255, 255, 255, 0.05);
+  --shadow-card: 0 4px 20px -4px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 12px 36px -8px rgba(225, 29, 72, 0.35), 0 0 20px -4px rgba(245, 158, 11, 0.15);
+  --bg-mesh:
+    radial-gradient(ellipse 70% 45% at 50% -10%, rgba(225, 29, 72, 0.13), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 90% 20%, rgba(139, 92, 246, 0.07), transparent 55%);
+}
+
+[data-theme="light"] {
+  /* LIGHT MODE: Crisp Editorial Alabaster + Deep Slate Ink + Crimson-Rose Startup Accents */
+  --c-bg: #f8f7f4;
+  --c-bg-rgb: 248 247 244;
+  --c-surface: #ffffff;
+  --c-surface-rgb: 255 255 255;
+  --c-surface-2: #f1efe9;
+  --c-surface-2-rgb: 241 239 233;
+  --c-border: #e4e2dc;
+  --c-border-rgb: 228 226 220;
+  --c-ink: #111318;
+  --c-ink-rgb: 17 19 24;
+  --c-muted: #606470;
+  --c-muted-rgb: 96 100 112;
+  --c-primary: #be123c;
+  --c-primary-rgb: 190 18 60;
+  --c-primary-dark: #9f1239;
+  --c-primary-dark-rgb: 159 18 57;
+  --c-primary-light: #e11d48;
+  --c-primary-light-rgb: 225 29 72;
+  --c-accent: #d97706;
+  --c-accent-rgb: 217 119 6;
+  --c-accent-2: #6366f1;
+  --c-accent-2-rgb: 99 102 241;
+  --c-success: #059669;
+  --c-success-rgb: 5 150 105;
+  --c-danger: #e11d48;
+  --c-danger-rgb: 225 29 72;
+  --c-warning: #d97706;
+  --c-warning-rgb: 217 119 6;
+
+  --road-asphalt: #1e2028;
+  --road-border: #343846;
+  --road-Node-bg: #ffffff;
+
+  --shadow-soft: 0 12px 32px -10px rgba(17, 19, 24, 0.08), 0 2px 6px -1px rgba(17, 19, 24, 0.04);
+  --shadow-card: 0 2px 10px -2px rgba(17, 19, 24, 0.05), 0 1px 2px rgba(17, 19, 24, 0.03);
+  --shadow-glow: 0 14px 34px -8px rgba(190, 18, 60, 0.18), 0 4px 12px -2px rgba(17, 19, 24, 0.06);
+  --bg-mesh:
+    radial-gradient(ellipse 70% 45% at 50% -10%, rgba(225, 29, 72, 0.07), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 90% 10%, rgba(217, 119, 6, 0.06), transparent 55%);
+}
+
+[data-theme="fun"] {
+  /* FUN MODE: Hyper-Vibrant Electric Startup (Electric Crimson-Magenta, Cyber Violet, Neon Cyan & Solar Gold) */
+  --c-bg: #0b0616;
+  --c-bg-rgb: 11 6 22;
+  --c-surface: #150d26;
+  --c-surface-rgb: 21 13 38;
+  --c-surface-2: #211538;
+  --c-surface-2-rgb: 33 21 56;
+  --c-border: #37235c;
+  --c-border-rgb: 55 35 92;
+  --c-ink: #faf5ff;
+  --c-ink-rgb: 250 245 255;
+  --c-muted: #b39ddb;
+  --c-muted-rgb: 179 157 219;
+  --c-primary: #ff2a7a;
+  --c-primary-rgb: 255 42 122;
+  --c-primary-dark: #db1460;
+  --c-primary-dark-rgb: 219 20 96;
+  --c-primary-light: #ff70a6;
+  --c-primary-light-rgb: 255 112 166;
+  --c-accent: #facc15;
+  --c-accent-rgb: 250 204 21;
+  --c-accent-2: #06b6d4;
+  --c-accent-2-rgb: 6 182 212;
+  --c-success: #00f5a0;
+  --c-success-rgb: 0 245 160;
+  --c-danger: #ff4769;
+  --c-danger-rgb: 255 71 105;
+  --c-warning: #facc15;
+  --c-warning-rgb: 250 204 21;
+
+  --road-asphalt: #1d1136;
+  --road-border: #4c2a85;
+  --road-Node-bg: #150d26;
+
+  --shadow-soft: 0 10px 35px -6px rgba(0, 0, 0, 0.6), 0 0 24px -6px rgba(255, 42, 122, 0.3);
+  --shadow-card: 0 8px 26px -6px rgba(8, 3, 18, 0.65), 0 0 1px 1px rgba(255, 42, 122, 0.14);
+  --shadow-glow: 0 12px 40px -6px rgba(255, 42, 122, 0.45), 0 0 28px -4px rgba(6, 182, 212, 0.35);
+  --bg-mesh:
+    radial-gradient(ellipse 75% 50% at 15% -5%, rgba(255, 42, 122, 0.24), transparent 60%),
+    radial-gradient(ellipse 65% 45% at 88% 15%, rgba(6, 182, 212, 0.2), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 50% 105%, rgba(139, 92, 246, 0.24), transparent 60%);
+}
+
+* {
+  border-color: var(--c-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--c-bg);
+  background-image: var(--bg-mesh);
+  background-attachment: fixed;
+  color: var(--c-ink);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background-color: var(--c-primary);
+  color: #ffffff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--c-border);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-primary);
+}
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid var(--c-primary);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Reduced motion respected */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   Signature element: the "waypoint path" & highway lane animation
+   ============================================================ */
+.waypoint-dash {
+  stroke-dasharray: 8 12;
+  stroke-linecap: round;
+  animation: dash-move 1.6s linear infinite;
+}
+
+.road-lane-dash {
+  stroke-dasharray: 12 14;
+  stroke-linecap: round;
+  animation: dash-move 1.4s linear infinite;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Utility: coordinate-style label (mono, tracked-out, uppercase) */
+.coord-label {
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-size: 0.6875rem;
+  font-weight: 600;
+}
+
+/* Dynamic startup gradient text */
+.text-gradient-crimson {
+  background: linear-gradient(135deg, var(--c-primary-light) 0%, var(--c-primary) 50%, var(--c-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtle architectural dot/grid backdrop */
+.bg-crimson-grid {
+  background-size: 32px 32px;
+  background-image: radial-gradient(rgba(var(--c-ink-rgb), 0.07) 1px, transparent 1px);
+}
+
+/* Prevent any accidental horizontal overflow app-wide */
+html,
+body,
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
